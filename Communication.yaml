@@ -1,0 +1,73 @@
+
+settings: {
+
+  logging: False,
+  hosts: {
+
+      endpoint1: null,
+      endpoint2: null,
+      endpoint3: null
+
+    }
+}
+
+clients: {
+
+#  uart1: {
+#    port: null,
+#    protocol: 'UART',
+#    remark: null,
+#    color: '[38;2;255;255;0m', # YELLOW
+#    baudrate: null,
+#    packet_size: null,
+#    flag: null,
+#    tickrate: 0.0000001
+#  },
+
+  sock1: {
+    port: 5000,
+    protocol: 'TCP',
+    remark: 'Testing Input 1',
+    color: '[38;2;0;128;0m', # GREEN
+    host: 'local'
+  },
+
+  sock2: {
+    port: 5001,
+    protocol: 'TCP',
+    remark: 'Testing Input 2',
+    color: '[38;2;0;128;0m', # GREEN
+    host: 'local'
+  }
+
+}
+
+servers: {
+
+  sock1: {
+    port: 50050,
+    protocol: 'UDP',
+    remark: 'Testing Output 1',
+    color: '[38;2;255;0;255m', # MAGENTA
+    host: "local",
+    tickrate: 0.00005
+  },
+
+  sock2: {
+    port: 50051,
+    protocol: 'UDP',
+    remark: 'Testing Output 2',
+    color: '[38;2;255;0;255m', # MAGENTA
+    host: "local",
+    tickrate: 0.00005
+  },
+
+  sock3: {
+    port: 50052,
+    protocol: 'UDP',
+    remark: 'Testing Output 3',
+    color: '[38;2;255;0;255m', # MAGENTA
+    host: "local",
+    tickrate: 0.00005
+  }
+}
