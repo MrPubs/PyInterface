@@ -32,7 +32,8 @@ A YAML configuration file that holds the configuration settings for connecting t
     ```
 
 2. Create a Virtual Environment:
-**Note**: This project uses Python 3.11.9
+
+    **Note**: This project uses Python 3.11.9.
 
     ```bash
     python.exe -m venv venv
