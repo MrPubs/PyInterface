@@ -4,9 +4,9 @@ settings: {
   logging: False,
   hosts: {
 
-      endpoint1: null,
-      endpoint2: null,
-      endpoint3: null
+      endpoint1: "127.0.0.1",
+      endpoint2: "127.0.0.1",
+      endpoint3: "127.0.0.1"
 
     }
 }

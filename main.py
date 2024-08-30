@@ -3,11 +3,9 @@
 import socket
 import multiprocessing as mp
 import threading
-# import pandas as pd
 import numpy as np
 import yaml
 import serial
-# import sys
 import keyboard
 import serial.tools.list_ports
 from datetime import datetime, timedelta
