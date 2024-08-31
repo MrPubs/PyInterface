@@ -30,14 +30,8 @@ A YAML configuration file that holds the configuration settings for connecting t
     git clone https://github.com/MrPubs/PyInterface.git
     cd PyInterface
     ```
-2. Preperation:
-
-    Make Sure the following:
-    * the Communication.yaml file is properly configured with your communicators
-    * if intending on using an InfluxDB database, Make sure to properly configure the Database.yaml for Database connection, and that the Database is up.
-    * Make sure to properly define the Brain_IO Pipelines(foo & bar), and linking them using the _link Decorator to Properly Link the right Index Communicators & DBLink Settings.
-
-3. Create a Virtual Environment:
+    
+2. Create a Virtual Environment:
 
     **Note**: This project uses Python 3.11.9.
 
@@ -46,13 +40,18 @@ A YAML configuration file that holds the configuration settings for connecting t
     venv\Scripts\activate
     ```
 
-4. Install the required Python packages:
+3. Install the required Python packages:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-5. Set up your `Communication.yaml` and `Database.yaml` files with the appropriate settings.
+4. Set up Project:
+   
+    Make Sure the following:
+    * the `Communication.yaml` file is properly configured with your communicators
+    * if intending on using an InfluxDB database, Make sure to properly configure the `Database.yaml` for Database connection, and that the Database is up.
+    * Make sure to properly define the `Brain_IO` Pipelines(`foo` & `bar`), and linking them using the _link Decorator to Properly Link the right Index Communicators & DBLink Settings.
 
 ## Usage
 
