@@ -23,15 +23,21 @@ A YAML configuration file that contains the settings for the socket and serial c
 A YAML configuration file that holds the configuration settings for connecting to the InfluxDB database. This includes details such as the database name, server URL, and authentication credentials.
 
 ## Installation
-
+    
 1. Clone the repository:
 
     ```bash
     git clone https://github.com/MrPubs/PyInterface.git
     cd PyInterface
     ```
+2. Preperation:
 
-2. Create a Virtual Environment:
+    Make Sure the following:
+    * the Communication.yaml file is properly configured with your communicators
+    * if intending on using an InfluxDB database, Make sure to properly configure the Database.yaml for Database connection, and that the Database is up.
+    * Make sure to properly define the Brain_IO Pipelines(foo & bar), and linking them using the _link Decorator to Properly Link the right Index Communicators & DBLink Settings.
+
+3. Create a Virtual Environment:
 
     **Note**: This project uses Python 3.11.9.
 
@@ -40,13 +46,13 @@ A YAML configuration file that holds the configuration settings for connecting t
     venv\Scripts\activate
     ```
 
-3. Install the required Python packages:
+4. Install the required Python packages:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Set up your `Communication.yaml` and `Database.yaml` files with the appropriate settings.
+5. Set up your `Communication.yaml` and `Database.yaml` files with the appropriate settings.
 
 ## Usage
 
